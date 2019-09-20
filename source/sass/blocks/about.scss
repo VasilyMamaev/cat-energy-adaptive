@@ -1,0 +1,37 @@
+.about {
+    width: 280px;
+    padding: 0 20px;
+}
+
+.about__title {
+    font-family: "Oswald";
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #000;
+}
+
+.about__list {
+    list-style: none;
+    padding: 0;
+}
+
+.about__item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.about__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #68b738;
+    margin-right: 20px;
+    height: 60px;
+    min-width: 60px;
+}

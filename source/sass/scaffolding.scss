@@ -1,0 +1,52 @@
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial", sans-serif;
+    color: #444444;
+    font-style: normal;
+    
+    background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+}
+
+.button {
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

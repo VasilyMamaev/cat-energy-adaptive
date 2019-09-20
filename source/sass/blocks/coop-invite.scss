@@ -1,0 +1,15 @@
+.coop-invite {
+    display: flex;
+    align-items: baseline;
+    min-width: 280px;
+    padding: 20px 20px;
+}
+
+.coop-invite__title {
+    text-transform: uppercase;
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 20px;
+}

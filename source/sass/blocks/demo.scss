@@ -1,0 +1,40 @@
+.demo {
+    min-width: 280px;
+    padding: 0 20px;
+    background-color: #f2f2f2;
+}
+
+.demo__title {
+    font-family: "Oswald";
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #000;
+}
+
+.demo__description {
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.demo__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.demo__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.demo__items-first {
+    font-family: "Oswald";
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #000;
+}
