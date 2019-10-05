@@ -1,0 +1,154 @@
+.catalog {
+    min-width: 320px;
+    width: 100%;
+}
+
+.catalog__title {
+    font-family: "Oswald","Arial", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 60px;
+    color: #111111;
+    border-top: 1px solid #ededed; 
+    margin: 0;
+    padding: 0 6%;
+}
+
+.catalog__product-list {
+    list-style: none;
+    padding: 0;
+}
+
+.catalog__product-item {
+    padding: 24px 6%;
+    border-top: 1px solid #ededed;
+}
+
+.catalog__product-wrapper1 {
+    display: flex;
+    padding-bottom: 24px;
+}
+
+.catalog__product-wrapper1 img {
+    flex-grow: 1;
+}
+
+.catalog__product-wrapper2 {
+    flex-grow: 1;
+}
+
+.catalog__product-title {
+    font-family: "Oswald","Arial", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.catalog__product-table {
+    width: 100%;
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: -4px;
+}
+
+.catalog__product-table td:nth-child(2) {
+    text-align: end;
+}
+
+.catalog__product-button {
+    width: 100%;
+    border: none;
+    background-color: #68b738;
+    color: #fff;
+    font-family: "Oswald","Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 12px 0;
+}
+
+.catalog__notification-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6%;
+    padding-bottom: 24px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+
+.catalog__notification-icon {
+    margin: 25px 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 14px;
+        width: 30px;
+        height: 2px;
+        background-color: #d3d3d3;
+    }
+     &::after {
+        content: "";
+        position: absolute;
+        left: 14px;
+        width: 2px;
+        height: 30px;
+        background-color: #d3d3d3;
+    }
+}
+
+.catalog__notification-title {
+    font-family: "Oswald","Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.catalog__notification-description {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.catalog__notification-button {
+    width: 100%;
+    border: none;
+    font-family: "Oswald","Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+    padding: 12px 0;
+}
+
+.optionally-produts{
+    padding: 0 6%;
+    width: 100%;
+}
+
+.optionally-produts__title--head {
+    font-family: "Oswald","Arial", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    position: relative;
+     &::after{
+        content: "";
+        position: absolute;
+        right: -20px;
+        top: 14px;
+        height: 3px;
+        width: 53px;
+        background-color: #68b738;
+        
+    }  
+   
+}
