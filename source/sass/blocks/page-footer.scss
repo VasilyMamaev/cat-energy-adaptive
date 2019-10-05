@@ -1,80 +1,64 @@
 .page-footer {
     min-width: 280px;
+    width: 100%;
     margin: 0;
-    padding: 0 20px;
+    padding: 0 6%;
     background-color: #f2f2f2;
-    
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .page-footer__logo {
     width: 130px;
     height: 26px;
-    margin: 30px 76px;
+    margin: 30px auto;
+
 }
 
-.page-footer__social social {
-    
-}
+.page-footer__social social {}
 
 .social__list {
     list-style: none;
     padding: 0;
     display: flex;
+    justify-content: center;
     font-size: 0;
     height: 64px;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
-    
+    position: relative;
 }
 
+.social__image {
+    fill: #666666;
 
-.social__link--vkontakte {
-    position: relative;
-    display: block;
+    &:hover,
+    &:focus {
+        fill: #68b738;
+    }
 
-    &::after {
-        content: "";
-        position: absolute;
-        top: 28px;
-        left: 74px;
-        display: block;
-        height: 14px;
-        width: 26px;
-        background-image: url(../img/icon-vk.svg);
+    &:active {
+        fill: #68b738;
+        opacity: 0.3;
     }
 }
 
-.social__link--instagram {
-    position: relative;
-    display: block;
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 26px;
-        left: 132px;
-        display: block;
-        height: 18px;
-        width: 18px;
-        background-image: url(../img/icon-insta.svg);
-    }
+.social__image--vkontakte {
+    position: absolute;
+    top: 28px;
+    left: 29%;
 }
 
-.social__link--facebook {
-    position: relative;
-    display: block;
+.social__image--instagram {
+    position: absolute;
+    top: 26px;
+    left: 47%;
+}
 
-    &::after {
-        content: "";
-        position: absolute;
-        top: 24px;
-        left: 188px;
-        display: block;
-        height: 19px;
-        width: 10px;
-        background-image: url(../img/icon-fb.svg);
-    }
+.social__image--facebook {
+    position: absolute;
+    top: 22px;
+    left: 65%;
 }
 
 .page-footer__copyright {
@@ -83,17 +67,118 @@
 }
 
 .copyright__link {
+    display: flex;
+
+    &:active {
+        opacity: 0.3;
+    }
+}
+
+.copyright__text {
+    color: #666666;
+    font-family: "Arial";
     font-size: 16px;
-    color: #444444;
-    position: relative;
-    &::after {
-        content: "";
+}
+
+.copyright__logo {
+    fill: #666666;
+    margin-left: auto;
+
+    &:hover,
+    &:focus {
+        fill: #68b738;
+    }
+
+    &:active {
+        fill: #68b738;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .page-footer {
+        margin: 0;
+        padding: 64px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .page-footer__logo {
+        margin: 0px 0px;
+
+    }
+
+    .page-footer__social social {}
+
+    .social__list {
+        height: 0;
+        border: none;
+    }
+
+    .social__image {
+        fill: #666666;
+
+        &:hover,
+        &:focus {
+            fill: #68b738;
+        }
+
+        &:active {
+            fill: #68b738;
+            opacity: 0.3;
+        }
+    }
+
+    .social__image--vkontakte {
         position: absolute;
         top: -8px;
-        left: 250px;
-        display: block;
-        height: 36px;
-        width: 34px;
-        background-image: url(../img/htmlacademy.svg);
+        left: -48px;
+    }
+
+    .social__image--instagram {
+        position: absolute;
+        top: -10px;
+        left: 0px;
+    }
+
+    .social__image--facebook {
+        position: absolute;
+        top: -14px;
+        left: 44px;
+    }
+
+    .page-footer__copyright {
+        margin: 0;
+        padding: 0;
+    }
+
+    .copyright__link {
+        display: flex;
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    .copyright__text {
+        color: #666666;
+        font-family: "Arial";
+        font-size: 16px;
+    }
+
+    .copyright__logo {
+        fill: #666666;
+        margin-left: auto;
+
+        &:hover,
+        &:focus {
+            fill: #68b738;
+        }
+
+        &:active {
+            fill: #68b738;
+        }
     }
 }

@@ -1,6 +1,7 @@
 .coop-invite {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
     min-width: 280px;
     padding: 20px 20px;
 }
@@ -12,4 +13,52 @@
     font-size: 16px;
     line-height: 20px;
     padding-right: 20px;
+    width: 40%;
+}
+
+.coop-ivite__adress p {
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    width: 160px;
+
+}
+
+@media (min-width: $tablet-width) {
+    .coop-invite {
+        min-width: 708px;
+        width: 100%;
+        padding: 65px 65px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .coop-invite__title {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 0;
+        width: 160px;
+    }
+
+    .coop-ivite__adress {
+        width: 152px;
+        text-align: end;
+    }
+
+    .coop-ivite__adress p {
+        font-size: 16px;
+        width: 160px;
+        padding-bottom: 14px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .coop-invite {
+        position: absolute;
+        top: 2357px;
+        background-color: #fff;
+        width: 570px;
+    }
+
 }
