@@ -99,15 +99,24 @@
 }
 
 @media (min-width: $desktop-width) {
+    .about {
+        width: 1300px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    
     .about__list {
-        width: 1440px;
-        padding-left: 110px;
+        width: 1220px;
         justify-content: space-between;
     }
     
     .about__item {
         width: 245px;
         margin: 0;
+    }
+    
+    .about__title {
+        margin-left: 0;
     }
     
     .about__description {

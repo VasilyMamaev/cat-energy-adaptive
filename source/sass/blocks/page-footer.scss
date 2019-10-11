@@ -45,19 +45,19 @@
 
 .social__image--vkontakte {
     position: absolute;
-    top: 28px;
+    top: -44px;
     left: 29%;
 }
 
 .social__image--instagram {
     position: absolute;
-    top: 26px;
+    top: -44px;
     left: 47%;
 }
 
 .social__image--facebook {
     position: absolute;
-    top: 22px;
+    top: -46px;
     left: 65%;
 }
 
@@ -113,6 +113,7 @@
     .page-footer__social social {}
 
     .social__list {
+        top: -64px;
         height: 0;
         border: none;
     }
@@ -133,19 +134,19 @@
 
     .social__image--vkontakte {
         position: absolute;
-        top: -8px;
+        top: -10px;
         left: -48px;
     }
 
     .social__image--instagram {
         position: absolute;
-        top: -10px;
+        top: -11px;
         left: 0px;
     }
 
     .social__image--facebook {
         position: absolute;
-        top: -14px;
+        top: -13px;
         left: 44px;
     }
 
