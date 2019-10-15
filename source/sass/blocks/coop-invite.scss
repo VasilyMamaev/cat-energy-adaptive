@@ -27,6 +27,10 @@
 }
 
 @media (min-width: $tablet-width) {
+    .coop-invite--secondary {
+        background-color: #f2f2f2;
+    }
+    
     .coop-invite__wrapper {
         min-width: 708px;
         width: 100%;
@@ -55,7 +59,8 @@
 }
 
 @media (min-width: $desktop-width) {
-    .coop-invite {
+    .coop-invite,
+    .coop-invite--secondary {
         position: relative;
     }
     

@@ -40,17 +40,24 @@
     .main-nav {
         min-width: 490px;
         display: flex;
+        
     }
 
     .main-nav__list {
         flex-direction: row;
     }
+    
+    .main-nav__link--catalog {
+        border-bottom: 2px solid #fff;
+    }
 
     .main-nav__item {
-        display: flex;
-        border: none;
         padding: 20px;
-        justify-content:space-between;
+        border: none;
+        
+        &:focus,:hover {
+            border-bottom: 2px solid #68b738;
+        }
     }
 
     .main-nav__link,
