@@ -1,0 +1,38 @@
+{
+  "name": "cat-energy-adaptive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass-glob": "^1.1.0",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-watch": "^5.0.1",
+    "gulp-webp": "^4.0.1",
+    "posthtml": "^0.11.6",
+    "posthtml-include": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VasilyMamaev/cat-energy-adaptive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VasilyMamaev/cat-energy-adaptive/issues"
+  },
+  "homepage": "https://github.com/VasilyMamaev/cat-energy-adaptive#readme"
+}

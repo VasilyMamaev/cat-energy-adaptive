@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
+
+@import "normalize.css";
+@import "variables.scss";
+@import "scaffolding.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/promo.scss";
+@import "blocks/about.scss";
+@import "blocks/demo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/map.scss";
+@import "blocks/options.scss";
+@import "blocks/coop-invite.scss";
+@import "blocks/catalog.scss";
+@import "blocks/optionally-products.scss";
+@import "blocks/event.scss";
+@import "blocks/main-form.scss";

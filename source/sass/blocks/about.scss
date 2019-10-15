@@ -1,0 +1,125 @@
+.about {
+    min-width: 280px;
+    padding: 0 6%;
+}
+
+.about__title {
+    font-family: "Oswald";
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #000;
+}
+
+.about__list {
+    list-style: none;
+    padding: 0;
+}
+
+.about__item {
+    display: flex;
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.about__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #68b738;
+    margin-right: 20px;
+    height: 60px;
+    min-width: 60px;
+}
+
+.about__description {
+    display: block;
+    width: 220px;
+    margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+    .about {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .about__title {
+        font-size: 60px;
+    }
+
+    .about__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .about__item {
+        flex-direction: column;
+        margin-bottom: 80px;
+        margin-right: 175px;
+        width: 24%;
+        height: 230px;
+        position: relative;
+        &::after {
+            content: "1";
+            position: absolute;
+            top: 92px;
+            left: 110px;
+            font-family: "Oswald";
+            font-size: 281px;
+            color: #f2f2f2;
+            z-index: -1;
+        }
+    }
+    
+    
+    
+    .about__image {
+        height: 80px;
+        width: 80px;
+    }
+    
+    .about__description {
+        display: block;
+        width: 250px;
+        margin-top: 30px;
+    }
+    
+    .about__title {
+        margin-left: 110px;
+    }
+
+}
+
+@media (min-width: $desktop-width) {
+    .about {
+        width: 1300px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    
+    .about__list {
+        width: 1220px;
+        justify-content: space-between;
+    }
+    
+    .about__item {
+        width: 245px;
+        margin: 0;
+    }
+    
+    .about__title {
+        margin-left: 0;
+    }
+    
+    .about__description {
+        width: 245px;
+    }
+}

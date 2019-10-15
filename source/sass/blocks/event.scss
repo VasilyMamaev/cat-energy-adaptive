@@ -1,0 +1,81 @@
+.event {
+    margin: 35px 0;
+    padding: 0 6%;
+    width: 100%;
+}
+
+.event__wrapper {
+    margin: 0 auto;
+    width: 280px;
+    height: 289px;
+    background-image: url(../../img/gift-photo-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.event__iamge {
+    margin-top: 64px;
+    width: 56px;
+    height: 60px;
+    fill: #fff;
+}
+
+.event__description {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    
+    width: 174px;
+    text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+   .event { 
+       margin: 70px 0;
+    }
+    
+    .event__wrapper{
+        width: 708px;
+        height: 200px;
+        background-image: url(../../img/gift-photo-tablet@1x.jpg);
+        flex-direction: row;
+    }
+    
+    .event__iamge {
+    margin-top: 0;
+    }
+    
+    .event__description {
+    text-align: left;
+    }
+}
+
+@media (min-width: $desktop-width) {
+   .event { 
+       margin:0;
+       position: relative;
+    }
+    
+    .event__wrapper{
+        width: 245px;
+        height: 289px;
+        background-image: url(../../img/gift-photo-desktop@1x.jpg);
+        flex-direction: column;
+        position: absolute;
+        bottom: 102px;
+        right: 110px;
+    }
+    
+    .event__iamge {
+    margin-top: 40px;
+    }
+    
+    .event__description {
+    text-align: center;
+    }
+}
